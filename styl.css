@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Montserrat:wght@700&family=Philosopher:ital@1&family=Poppins:wght@400;500;600&family=Source+Code+Pro:wght@500&family=Source+Sans+3:wght@500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: #262626;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #4f4f4f;
+    border-radius: 6px;
+}
+
+body{
+    text-align: center;
+    background: rgba(0,0,0,.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:50px;
+padding: 100px 0;
+    overflow-x: hidden;
+}
+.tupper{
+
+}
+.container{
+
+
+    display: flex;
+    align-items: center;
+    gap:40px;
+}
+input[type="text"] {
+    padding: 15px 25px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    width: 600px;
+    color: #fff;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px #444;
+
+}
+.text{
+    font-size: 5vmin;
+}
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px #2980b9;
+}
+
+#submitButton, .rotate {
+    padding: 15px 25px;
+    border-radius: 15px;
+    border: none;
+    font-size: 5vmin;
+    background-color: #333;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 0 10px #555;
+}
+
+#submitButton:hover, .rotate:hover {
+    background-color: #222;
+    box-shadow: 0 0 10px #ffffff;
+}
+.canvasBlock{
+    display: flex;
+    align-items: center;
+    gap:20px;
+
+}
+.exsamples{
+    margin-top: 50px;
+    color:white;
+    max-width: 90vw;
+display: flex;
+    flex-direction: column;
+    gap:40px;
+    flex-wrap: wrap;
+        
+
+}
+.exsample{
+word-break: break-all;
+}
+@media (max-width: 500px) {
+    .container,.canvasBlock{
+        scale:.5;
+        flex-direction: column;
+    }
+}
